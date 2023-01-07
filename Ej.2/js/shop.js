@@ -94,11 +94,14 @@ function buy(id) {
       counter++;
     }
     document.getElementById("count_product").innerHTML = counter;
-    console.log(cartList);
+    console.log(cartList)
   }
 // Exercise 2
 function cleanCart() {
-   
+    cartList.length = 0;
+    counter=0;
+    document.getElementById("count_product").innerHTML = 0;
+    console.log(cartList);
 }
 
 // Exercise 3
@@ -139,5 +142,4 @@ function removeFromCart(id) {
 }
 
 function open_modal() {
-  
-}
+  }
