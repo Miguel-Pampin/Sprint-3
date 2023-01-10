@@ -6,6 +6,7 @@
   min-height: 50rem;
   width: 100%;
   overflow: hidden;
+  z-index: 0;
 }
 
 .video-background-holder video {
@@ -25,7 +26,7 @@
 
 .video-background-content {
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .video-background-overlay {
@@ -36,5 +37,21 @@
   width: 100%;
   background-color: black;
   opacity: 0.5;
+  z-index: 0;
+}
+.fondo{
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: linear-gradient(to right, #e1dee6, #e1dee6 6.5px, #e5e5f7 6.5px, #e5e5f7 );
+  background-size: 13px 100%;
+}
+.position{
+  position: relative;
+  top: 5em;
+  z-index: 1;
+}
+.position1{
+  position: relative;
+  top: 1em;
   z-index: 1;
 }

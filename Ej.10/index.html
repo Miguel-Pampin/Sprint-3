@@ -19,9 +19,19 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="50">
+	<div class="video-background-holder ">
+		<div class="video-background-overlay"></div>
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="images/Perro.mp4" type="video/mp4">
+		</video>
+		<div class="video-background-content container h-100">
+			<div class="d-flex h-100 text-center align-items-center">
+			</div>
+		</div>
+	</div>
 	<!-- Navigation-->
 	<nav class="navbar py-3 py-lg-0 navbar-light bg-light navbar-expand-lg" id="navbar-example2">
-		<div class="container d-flex ">
+		<div class="container d-flex fixed-top fondo">
 			<a class="navbar-brand " href="#!">LuxuryCan</a>
 			<div class="d-flex flex-row order-lg-last align-items-center">
 
@@ -45,7 +55,7 @@
 
 				<ul class="navbar-nav me-auto mb-4 mb-lg-0 ms-lg-5">
 					<li class="nav-item">
-						<a class="nav-link" href="#grocery"><i class="fas fa-dog"></i>Descanso</a>
+						<a class="nav-link" href="#Descanso"><i class="fas fa-dog"></i>Descanso</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#beauty"><i class="fas fa-heart"></i>Actividad</a>
@@ -61,91 +71,73 @@
 
 	<!-- Header-->
 	<header class=" bg-dark py-2 ">
-		<div class="container px-4 px-lg-5 my-5">
-			<div class="text-center text-white">
+		<div class="container my-3 ">
+			<div class="text-center text-white position">
 				<h1 class="display-4 fw-bolder">Vidadeperro <img src="/Ej.10/images/perro.gif"></h1>
 				<p class="lead fw-normal text-white-50 mb-0">La tienda de accesorios de tu mejor amigo</p>
 			</div>
 		</div>
 	</header>
 	<!-- Section-->
-	<div class="video-background-holder ">
-		<div class="video-background-overlay"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-			<source src="images/Perro.mp4" type="video/mp4">
-		</video>
-		<div class="video-background-content container h-100">
-			<div class="d-flex h-100 text-center align-items-center">
-			</div>
-			<section class=" pt-5" id="Descanso">
-
-				<h2 class="text-center"><i class="fas fa-dog pe-3"></i></i>Descanso</h2>
-				<div class="container px-4 px-lg-5 mt-5">
-					<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-						<div class="col mb-5">
-							<div class="card h-100">
-								<img class="card-img-top"
-									src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQJg-28AhN8EsGs8EcnyXE-RzlkxE5LnHovFyvEVaqgvDkE1xhItEbIZprtXmP4tdwxUNj_PbiYHckxFcfmv7UpC6hYwC9lmnCdJoFwGc7logNN2M3fPQXtVg&usqp=CAE"
-									alt="..." />
-								<div class="card-body p-4">
-									<div class="text-center">
-										<h5 class="fw-bolder">Golden Royal</h5>
-										300€
-									</div>
-								</div>
-								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-									<div class="text-center "><button type="button" onclick="buy(1)"
-											class="btn btn-primary">Add to cart</button></div>
-								</div>
+	<section class=" pt-5" id="Descanso">
+		<h2 class="text-center position1 text-warning"><i class="fas fa-dog pe-3"></i></i>Descanso</h2>
+		<div class="container px-4 px-lg-5 mt-5">
+			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+				<div class="col mb-5">
+					<div class="card h-100">
+						<img class="card-img-top"
+							src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQJg-28AhN8EsGs8EcnyXE-RzlkxE5LnHovFyvEVaqgvDkE1xhItEbIZprtXmP4tdwxUNj_PbiYHckxFcfmv7UpC6hYwC9lmnCdJoFwGc7logNN2M3fPQXtVg&usqp=CAE"
+							alt="..." />
+						<div class="card-body p-4">
+							<div class="text-center">
+								<h5 class="fw-bolder">Golden Royal</h5>
+								300€
 							</div>
 						</div>
-						<div class="col mb-5">
-							<div class="card h-100">
-								<img class="card-img-top"
-									src="https://luxurydog.shop/wp-content/uploads/2018/10/George_pile_blue1-600x600.png"
-									alt="..." />
-								<div class="card-body p-4">
-									<div class="text-center">
-										<h5 class="fw-bolder">Royal blue</h5>
-										200€
-									</div>
-								</div>
-								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-									<div class="text-center"><button type="button" onclick="buy(2)"
-											class="btn btn-primary">Add to cart</button></div>
-								</div>
-							</div>
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center "><button type="button" onclick="buy(1)" class="btn btn-primary">Add
+									to cart</button></div>
 						</div>
-						<div class="col mb-5">
-							<div class="card h-100">
-								<img class="card-img-top"
-									src="https://luxurydog.shop/wp-content/uploads/2018/10/Arthur_cut_pile_black11-600x600.jpg"
-									alt="..." />
-								<div class="card-body p-4">
-									<div class="text-center">
-										<h5 class="fw-bolder">Black Confort</h5>
-										150€
-									</div>
-								</div>
-								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-									<div class="text-center"><button type="button" onclick="buy(3)"
-											class="btn btn-primary">Add to cart</button></div>
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
-			</section>
-		</div>
-	</div>
-
-
-
-	</div>
-
+				<div class="col mb-5">
+					<div class="card h-100">
+						<img class="card-img-top"
+							src="https://luxurydog.shop/wp-content/uploads/2018/10/George_pile_blue1-600x600.png"
+							alt="..." />
+						<div class="card-body p-4">
+							<div class="text-center">
+								<h5 class="fw-bolder">Royal blue</h5>
+								200€
+							</div>
+						</div>
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><button type="button" onclick="buy(2)" class="btn btn-primary">Add
+									to cart</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<img class="card-img-top"
+							src="https://luxurydog.shop/wp-content/uploads/2018/10/Arthur_cut_pile_black11-600x600.jpg"
+							alt="..." />
+						<div class="card-body p-4">
+							<div class="text-center">
+								<h5 class="fw-bolder">Black Confort</h5>
+								150€
+							</div>
+						</div>
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><button type="button" onclick="buy(3)" class="btn btn-primary">Add
+									to cart</button></div>
+						</div>
+					</div>
+				</div>
+	</section>
+	
 	<section class="pt-5" id="beauty">
-		<h2 class="text-center"><i class="fas fa-heart pe-3"></i>Actividad</h2>
+		<h2 class="text-center position1 text-danger"><i class="fas fa-heart pe-3 "></i>Actividad</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
@@ -204,7 +196,7 @@
 		</div>
 	</section>
 	<section class="pt-5" id="clothes">
-		<h2 class="text-center"><i class="fas fa-tshirt pe-3"></i>Moda</h2>
+		<h2 class="text-center position1 text-success"><i class="fas fa-tshirt pe-3"></i>Moda</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
@@ -265,9 +257,9 @@
 	</div>
 
 	<!-- Footer-->
-	<footer class="py-3 bg-dark">
+	<footer class="py-3 bg-dark position">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Miguel Pampín 2022</p>
+			<p class="m-0 text-center text-white">Copyright &copy; Miguel Pampín 2023</p>
 		</div>
 	</footer>
 
@@ -280,7 +272,7 @@
 				</div>
 				<div class="modal-body">
 					<h3 class="text-center bill px-5">Shopping Cart</h3>
-					<table class="table">
+					<table class="table fondo">
 						<thead>
 							<tr>
 								<th scope="col">Product</th>
