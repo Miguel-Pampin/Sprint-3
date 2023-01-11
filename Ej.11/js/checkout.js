@@ -1,6 +1,7 @@
 
 // Exercise 6
 function validate() {
+	
 	let error = 0;
 	// Get the input fields
 	let fName = document.getElementById("fName");
@@ -41,9 +42,8 @@ function validate() {
 		document.getElementById('fPassword').classList.add('is-invalid');
 		error++;
 	}
-
 	if (fAddress.value == '' || fAddress.length <= 3) {
-		document.getElementById('fAdress').classList.add('is-invalid');
+		document.getElementById('fAddress').classList.add('is-invalid');
 		error++;
 	}
 	if (fLastN.value == '' || fLastN.length <= 3) {
@@ -56,5 +56,13 @@ function validate() {
 	} else {
 		return true;
 	}
+	
+}
+function validation(){
 
+if( fName.value ==='' || fEmail.value  ===''|| fAddress.value == '' ||fPassword.value == '' ||fPhone.value == '' ||fLastN.value == '' ){
+return false;
+}else{
+return true;
+}
 }
