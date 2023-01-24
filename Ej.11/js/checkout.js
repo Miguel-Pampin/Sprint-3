@@ -59,6 +59,6 @@ function validate(event) {
 	}
 	
 	event.preventDefault();
-    /* event.stopPropagation(); */
+     event.stopPropagation();
 
 }
